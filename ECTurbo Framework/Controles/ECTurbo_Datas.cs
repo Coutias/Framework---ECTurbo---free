@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Windows.Forms;
+using ECTurbo_Framework.Codigos;
 
 namespace ECTurbo_Framework.Controles
 {
@@ -30,9 +31,8 @@ namespace ECTurbo_Framework.Controles
             catch (Exception)
             {
 
-                MessageBox.Show("Data Inválida");
+                Funcoes.CriarLabel(this, "Data Inválida");
                 e.Cancel = true;
-                base.Focus();
 
             }
 
