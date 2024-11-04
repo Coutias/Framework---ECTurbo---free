@@ -29,7 +29,8 @@ namespace ECTurbo_Framework
             if (checkBox1.Checked == false)
             {
 
-                Funcoes.CriarLabel(checkBox1, "Por favor, marque essa opção");
+                Funcoes.CriarLabel(checkBox1, "Por favor, marque essa opção", "info");
+                Funcoes.CriarLabel(ecTurbo_Datas1, "xxx");
 
             }
 
