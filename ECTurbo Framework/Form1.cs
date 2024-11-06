@@ -26,13 +26,7 @@ namespace ECTurbo_Framework
         private void button1_Click(object sender, EventArgs e)
         {
 
-            if (checkBox1.Checked == false)
-            {
-
-                Funcoes.CriarLabel(checkBox1, "Por favor, marque essa opção", "info");
-                Funcoes.CriarLabel(ecTurbo_Datas1, "xxx");
-
-            }
+            
 
         }
     }

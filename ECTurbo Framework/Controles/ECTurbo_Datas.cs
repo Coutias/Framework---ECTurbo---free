@@ -14,6 +14,8 @@ namespace ECTurbo_Framework.Controles
 
             base.OnValidating(e);
 
+            Funcoes.RemoverLabel(this);
+
             if (Text == string.Empty)
             {
 

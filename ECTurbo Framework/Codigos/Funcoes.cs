@@ -8,12 +8,13 @@ namespace ECTurbo_Framework.Codigos
     public class Funcoes
     {
 
-        public static void CriarLabel(Control ctr, string texto, string tipo = "erro", Color cor = "Default")
+        public static void CriarLabel(Control ctr, string texto, string tipo = "erro", Color cor = default)
         {
 
             Label lbl = new Label()
             {
 
+                Name = "lb_" + ctr.Name,
                 Text = texto,
                 BackColor = Color.Transparent,
                 Font = new Font("Century Gothic", 9F, FontStyle.Bold),
@@ -56,6 +57,13 @@ namespace ECTurbo_Framework.Codigos
             }
 
             ctr.Parent.Controls.Add(lbl);
+
+        }
+
+        public static void RemoverLabel(Control ctr)
+        {
+
+            ctr.Parent.Controls.Remove(ctr.Parent.Controls["lb_" + ctr.Name]);
 
         }
 
